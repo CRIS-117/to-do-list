@@ -47,7 +47,7 @@ This is a **simple To-Do List application** built with **Angular 14**. It provid
 
 1. **Clone the repository**:
 
-   ```bash
+```bash
    git clone https://github.com/your-username/to-do-list.git
    cd to-do-list
    ```
