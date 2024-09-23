@@ -41,7 +41,7 @@ This is a **simple To-Do List application** built with **Angular 14**. It provid
 
 ### Prerequisites
 
-- **Node.js** (v14 or later)
+- **Node.js** (v14 or superior)
 - **npm** (comes with Node.js)
 - **Angular CLI** (if not installed globally, use `npx`)
 
