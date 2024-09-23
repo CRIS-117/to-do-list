@@ -15,6 +15,7 @@ export class TaskCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.task.status)
   }
 
   onDelete() {

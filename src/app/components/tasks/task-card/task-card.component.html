@@ -1,4 +1,4 @@
-<nz-card [nzTitle]="task.title" [ngClass]="task.status ? 'bg-gradient-to-r from-lime-200 via-lime-300 to-lime-400 rounded-md mb-5 shadow-md' : 'bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-200 rounded-md mb-5 shadow-md'">
+<nz-card [nzTitle]="task.title" [ngClass]="task.status ? 'card-true' : 'card-false'">
   <div class="flex flex-col md:flex-row">
     <div class="w-full md:w-3/4">
       <p class="leading-tight">{{ task.description }}</p>
@@ -10,7 +10,7 @@
         {{ task.status ? 'Completado' : 'Pendiente' }}
       </label>
 
-      <button nz-button nzType="primary" (click)="onDelete()" class="bg-red-400 hover:bg-red-500 border-none rounded-md min-w-full flex justify-center items-center min-h-10 md:min-w-10">
+      <button nz-button nzType="primary" (click)="onDelete()" class="button-delete">
         <span nz-icon nzType="delete" nzTheme="fill"></span>
       </button>
     </div>
