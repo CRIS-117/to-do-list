@@ -1,10 +1,17 @@
 <div class="mb-5">
   <app-task-filter (filterChange)="applyFilter($event)"></app-task-filter>
 </div>
+<div class="mb-5 bg-slate-200 rounded-md shadow-md">
+  <div class="px-5 pt-5">
+    <b class="text-xl">Tareas</b>
+  </div>
+  <div class="p-5 flex flex-col md:gap-5 md:flex-row">
+    <p class="text-base"><span class="font-semibold">Totales:</span> {{totalTasks}}</p>
+    <p class="text-base"><span class="font-semibold">Pendientes:</span> {{pendingTasks}}</p>
+    <p class="text-base"><span class="font-semibold">Completadas:</span> {{completeTasks}}</p>
+  </div>
+</div>
 <div *ngFor="let task of filteredTasks" class="overflow-hidden">
-  <app-task-card
-    [task]="task"
-    (deleteTask)="deleteTask($event)"
-    (toggleStatus)="updateTaskStatus($event)"
-  ></app-task-card>
+  <app-task-card [task]="task" (deleteTask)="deleteTask($event)"
+    (toggleStatus)="updateTaskStatus($event)"></app-task-card>
 </div>

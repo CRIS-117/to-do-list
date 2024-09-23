@@ -12,16 +12,28 @@ export class ListTasksComponent implements OnInit {
   tasks: Task[] = [];
   filteredTasks: Task[] = [];
 
+  totalTasks: number = 0;
+  pendingTasks: number = 0;
+  completeTasks: number = 0;
+
   constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
     this.loadTasks();
   }
 
+  calculateTasks(){ 
+    this.totalTasks = this.tasks.length;
+    this.pendingTasks = this.tasks.filter(task => !task.status).length;
+    this.completeTasks = this.tasks.filter(task => task.status).length;
+  }
+
   loadTasks() {
     this.taskService.getTasks().subscribe((tasks) => {
       this.tasks = tasks;
+      this.applySort();
       this.filteredTasks = tasks;
+      this.calculateTasks();
     });
   }
 
@@ -33,6 +45,7 @@ export class ListTasksComponent implements OnInit {
     } else if (filter === 'completed') {
       this.filteredTasks = this.tasks.filter(task => task.status);
     }
+    this.calculateTasks();
   }
 
   applySort() {
