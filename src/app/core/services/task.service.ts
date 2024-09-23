@@ -27,7 +27,6 @@ export class TaskService {
   }
 
   createTask(newTask: Task): Observable<Task> {
-    console.log(newTask);
     return this.http.post<Task>(this.apiUrl, newTask);
   }
 
