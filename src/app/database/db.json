@@ -1,0 +1,84 @@
+{
+  "tasks": [
+    {
+      "id": "2",
+      "title": "Aprender Angular",
+      "description": "Esta es una tarea más detallada que requiere más contexto.",
+      "created_at": "2024-09-15T10:30:00",
+      "updated_at": "2024-09-20T10:30:00",
+      "status": true
+    },
+    {
+      "id": "3",
+      "title": "Esto es una prueba",
+      "description": "Estoy probando esto",
+      "status": false,
+      "created_at": "2024-09-22T18:46:26.386Z",
+      "updated_at": null
+    },
+    {
+      "id": " 4",
+      "title": "Segunda prueba",
+      "description": "provando mensajes de error",
+      "status": false,
+      "created_at": "2024-09-22T18:50:07.343Z",
+      "updated_at": null
+    },
+    {
+      "id": " 5",
+      "title": "Probando",
+      "description": "Se pone a prueba los toast",
+      "status": false,
+      "created_at": "2024-09-22T19:03:11.513Z",
+      "updated_at": null
+    },
+    {
+      "id": " 6",
+      "title": "Esto es una prueba de alert",
+      "description": "pongo a prueba el alert",
+      "status": false,
+      "created_at": "2024-09-22T19:13:39.355Z",
+      "updated_at": null
+    },
+    {
+      "id": " 9",
+      "title": "margin",
+      "description": "margin",
+      "status": false,
+      "created_at": "2024-09-22T19:17:19.071Z",
+      "updated_at": null
+    },
+    {
+      "id": "10",
+      "title": "margin bottom",
+      "description": "margin bottom",
+      "status": false,
+      "created_at": "2024-09-22T19:17:43.345Z",
+      "updated_at": null
+    },
+    {
+      "id": "11",
+      "title": "movi",
+      "description": "movi",
+      "status": false,
+      "created_at": "2024-09-22T19:45:33.098Z",
+      "updated_at": null
+    },
+    {
+      "id": "12",
+      "title": "Holi",
+      "description": "Venta de hotcakes los panas rabbit :D",
+      "status": false,
+      "created_at": "2024-09-23T01:31:22.433Z",
+      "updated_at": null
+    },
+    {
+      "id": "13",
+      "title": "fdsfdsf",
+      "description": "sfdfds",
+      "status": false,
+      "created_at": "2024-09-23T01:43:38.553Z",
+      "updated_at": null
+    }
+  ]
+}

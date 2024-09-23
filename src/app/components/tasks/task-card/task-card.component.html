@@ -1,0 +1,18 @@
+<nz-card [nzTitle]="task.title" [ngClass]="task.status ? 'bg-gradient-to-r from-lime-200 via-lime-300 to-lime-400 rounded-md mb-5 shadow-md' : 'bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-200 rounded-md mb-5 shadow-md'">
+  <div class="flex flex-col md:flex-row">
+    <div class="w-full md:w-3/4">
+      <p class="leading-tight">{{ task.description }}</p>
+    </div>
+
+    <div class="flex flex-col w-full mt-5 md:mt-0 md:flex-row md:w-1/4 md:justify-center md:items-center">
+
+      <label nz-checkbox [(ngModel)]="task.status" (ngModelChange)="onToggleStatus()" class="mb-5 md:mb-0 font-semibold text-sm">
+        {{ task.status ? 'Completed' : 'Pending' }}
+      </label>
+
+      <button nz-button nzType="primary" (click)="onDelete()" class="bg-red-400 hover:bg-red-500 border-none rounded-md min-w-full flex justify-center items-center min-h-10 md:min-w-10">
+        <span nz-icon nzType="delete" nzTheme="fill"></span>
+      </button>
+    </div>
+  </div>
+</nz-card>

@@ -1,0 +1,15 @@
+<ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed" class="rounded-md">
+  <li nz-submenu nzOpen nzTitle="Filtros" nzIcon="filter">
+    <ul>
+      <li nz-menu-item nzMatchRouter>
+        <button (click)="setFilter('all')">Todas las tareas</button>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <button (click)="setFilter('pending')">Tareas Pendientes</button>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <button (click)="setFilter('completed')">Tareas Completadas</button>
+      </li>
+    </ul>
+  </li>
+</ul>

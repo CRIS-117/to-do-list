@@ -1,24 +1,22 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { TaskCreatorPageComponent } from './task-creator-page/task-creator-page.component';
-import { CompletedTasksComponent } from './completed-tasks/completed-tasks.component';
-import { PendingTasksComponent } from './pending-tasks/pending-tasks.component';
 import { TasksRoutingModule } from "./tasks-routing.module";
+import { ComponentsModule } from '../../components/components.module';
+import { ListTasksComponent } from './list-tasks/list-tasks.component'; 
 
 @NgModule({
   imports: [
     CommonModule,
     TasksRoutingModule,
+    ComponentsModule
   ],
   declarations: [
     TaskCreatorPageComponent,
-    CompletedTasksComponent,
-    PendingTasksComponent
+    ListTasksComponent
   ],
   exports: [
     TaskCreatorPageComponent,
-    CompletedTasksComponent,
-    PendingTasksComponent
   ],
 })
 export class TasksModule { }

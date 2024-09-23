@@ -1,10 +1,3 @@
-/* :host {
-  display: flex;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
 .app-layout {
   height: 100vh;
 }
@@ -15,7 +8,6 @@
   min-height: 100vh;
   box-shadow: 2px 0 6px rgba(0,21,41,.35); 
 }
-/* #51F238  #94F235  #C8F230 #F2E52E  #0A1426  #273440*/
 
 .sidebar-logo {
   position: relative;
@@ -46,10 +38,26 @@
 
 nz-content {
   margin: 24px;
+
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
 }
 
 .inner-content {
   padding: 24px;
   background: #fff;
   height: 100%;
+  overflow-y: auto; 
+  max-height: 100vh; 
 }
+
+.ant-menu-item-selected{
+  background-color: #C8F230 !important;
+}
+
+.ant-menu-item-selected a{
+  color: #0A1426;
+}
+
+/* #51F238  #94F235  #C8F230 #F2E52E  #0A1426  #273440*/

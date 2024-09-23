@@ -1,0 +1,35 @@
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.images_container_one, .images_container_two {
+  position: relative;
+}
+
+.images_container_one {
+  animation: moveUpDownOne 3s infinite alternate;
+}
+
+.images_container_two {
+  animation: moveUpDownTwo 3s infinite alternate;
+}
+
+@keyframes moveUpDownOne {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+@keyframes moveUpDownTwo {
+  0% {
+    top: 25px;
+  }
+  100% {
+    top: 0;
+  }
+}
