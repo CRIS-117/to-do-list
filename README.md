@@ -11,6 +11,7 @@ This is a **simple To-Do List application** built with **Angular 14**. It provid
 - **Sort tasks** by creation date (newest first) with completed tasks displayed last.
 - **Responsive design** for desktop and mobile devices using **Tailwind CSS**.
 - **Simulated backend** using **json-server** for task persistence.
+- **Counter of total**, pending and completed tasks.
 
 ---
 
@@ -21,6 +22,7 @@ This is a **simple To-Do List application** built with **Angular 14**. It provid
 - **Sorting**: Tasks are sorted by creation date, with completed tasks moved to the bottom.
 - **Responsive UI**: Works across different screen sizes, ensuring a great experience on mobile and desktop.
 - **Animations**: Smooth animations for task transitions using **CSS keyframes**.
+- **Counter**: Shows the number of total, pending and completed tasks.
 
 ---
 
@@ -59,12 +61,12 @@ This is a **simple To-Do List application** built with **Angular 14**. It provid
 3. **Run the json-server**:
 
   ```bash
-   npx json-server --watch src/app/database/db.json --port 3000
+   npm run start:json-server
    ```
 4. **Run the Angular application**:
 
   ```bash
-   npx json-server --watch src/app/database/db.json --port 3000
+   ng serve
    ```
 5. **Open the application**:
 
