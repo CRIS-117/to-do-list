@@ -1,5 +1,5 @@
 .button-delete {
-  @apply bg-red-400 hover:bg-red-500 border-none rounded-md min-w-full flex justify-center items-center min-h-10 md:min-w-10
+  @apply bg-red-400 hover:bg-red-500 border-none rounded-md min-w-full flex justify-center items-center min-h-10 md:min-w-10 
 }
 
 .card-true {
