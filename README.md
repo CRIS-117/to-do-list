@@ -1,5 +1,5 @@
 # To-Do List Application
-
+![Mi Logo](./src/assets/images/logo.png)
 ## Project Description
 
 This is a **simple To-Do List application** built with **Angular 14**. It provides full **CRUD functionality** (Create, Read, Update, Delete) to manage tasks efficiently. The app allows users to:
@@ -87,6 +87,7 @@ This is a **simple To-Do List application** built with **Angular 14**. It provid
 ## Project Structure
 
 - `src/app/core`: Contains services and models (e.g., task model and task service).
+- - `src/app/pages`: Contains pages such as the Welcome Page and Tasks Pages.
 - `src/app/components`: Contains reusable components such as the task card and filter.
 - `src/app/database/db.json`: A local JSON file used by **json-server** to simulate API responses.
 
@@ -101,24 +102,6 @@ Feel free to submit issues or contribute to the project by forking the repositor
 ## License
 
 Copyright (c) [2024] [Cristofer Angeles]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
 ---
 
