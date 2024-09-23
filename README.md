@@ -1,5 +1,5 @@
 # To-Do List Application
-
+![Mi Logo](./src/assets/images/logo.png)
 ## Project Description
 
 This is a **simple To-Do List application** built with **Angular 14**. It provides full **CRUD functionality** (Create, Read, Update, Delete) to manage tasks efficiently. The app allows users to:
