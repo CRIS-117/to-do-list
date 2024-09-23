@@ -1,27 +1,127 @@
-# ToDoList
+# To-Do List Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+## Project Description
 
-## Development server
+This is a **simple To-Do List application** built with **Angular 14**. It provides full **CRUD functionality** (Create, Read, Update, Delete) to manage tasks efficiently. The app allows users to:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Create tasks** with a title and description.
+- **Update the status** of tasks between pending and completed.
+- **Delete tasks** from the list.
+- **Filter tasks** by their status (pending, completed, or all).
+- **Sort tasks** by creation date (newest first) with completed tasks displayed last.
+- **Responsive design** for desktop and mobile devices using **Tailwind CSS**.
+- **Simulated backend** using **json-server** for task persistence.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Task Management**: Add, edit, delete tasks with status updates.
+- **Filters**: Filter tasks by pending, completed, or view all tasks.
+- **Sorting**: Tasks are sorted by creation date, with completed tasks moved to the bottom.
+- **Responsive UI**: Works across different screen sizes, ensuring a great experience on mobile and desktop.
+- **Animations**: Smooth animations for task transitions using **CSS keyframes**.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular 14**
+- **NG-Zorro (Ant Design for Angular)**
+- **Tailwind CSS**
+- **json-server** (for simulating a backend API)
+- **RxJS** (for handling asynchronous operations)
+- **TypeScript**
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Installation
 
-## Further help
+### Prerequisites
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Node.js** (v14 or later)
+- **npm** (comes with Node.js)
+- **Angular CLI** (if not installed globally, use `npx`)
+
+### Steps
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/to-do-list.git
+   cd to-do-list
+   ```
+2. **Install dependencies**:
+
+  ```bash
+   npm install
+   ```
+3. **Run the json-server**:
+
+  ```bash
+   npx json-server --watch src/app/database/db.json --port 3000
+   ```
+4. **Run the Angular application**:
+
+  ```bash
+   npx json-server --watch src/app/database/db.json --port 3000
+   ```
+5. **Open the application**:
+
+- **Open http://localhost:4200 in your browser to see the app.**
+
+---
+
+## Usage
+
+1. **Create a task**: Use the "Create Task" button to add a new task with a title and description.
+2. **Update task status**: Use the checkbox next to each task to mark it as completed or pending.
+3. **Delete a task**: Click the delete button (trash icon) to remove a task.
+4. **Filter tasks**: Use the filter menu to view all tasks, only pending tasks, or only completed tasks.
+5. **Task Sorting**: Tasks are automatically sorted with the most recent tasks at the top, and completed tasks moved to the bottom.
+
+---
+
+## Project Structure
+
+- `src/app/core`: Contains services and models (e.g., task model and task service).
+- `src/app/components`: Contains reusable components such as the task card and filter.
+- `src/app/database/db.json`: A local JSON file used by **json-server** to simulate API responses.
+
+---
+
+## Contributing
+
+Feel free to submit issues or contribute to the project by forking the repository and creating pull requests.
+
+---
+
+## License
+
+Copyright (c) [2024] [Cristofer Angeles]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Contact
+
+For any questions or suggestions, feel free to reach out at **cristofer_alan123@hotmail.com**.
+
+
