@@ -2,27 +2,34 @@
 <nz-alert *ngIf="taskSuccess" nzType="success" nzMessage="Tarea creada exitosamente" nzShowIcon class="mb-5"></nz-alert>
 
 <!-- Error message -->
-<nz-alert *ngIf="taskError" nzType="error" nzMessage="Ocurrió un error al crear la tarea" nzShowIcon class="mb-5"></nz-alert>
+<nz-alert *ngIf="taskError" nzType="error" nzMessage="Ocurrió un error al crear la tarea" nzShowIcon
+  class="mb-5"></nz-alert>
 
 <!-- Form -->
-<nz-form [formGroup]="taskForm">
-  <nz-form-item>
-    <nz-form-label [nzFor]="'title'" nzRequired class="min-w-28 text-start font-bold">Título</nz-form-label>
-    <nz-form-control  nzErrorTip="Necesitas un título!">
-      <input nz-input formControlName="title" id="title" placeholder="Ingrese el título de la tarea..." class="rounded-md hover:border-lime-500" />
-    </nz-form-control>
-  </nz-form-item>
+<div class="bg-lime-500 p-3 pt-8 rounded-md shadow-xl">
+  <nz-form [formGroup]="taskForm">
+    <nz-form-item>
+      <nz-form-label [nzFor]="'title'" nzRequired class="min-w-28 text-start font-bold">Título</nz-form-label>
+      <nz-form-control nzErrorTip="Necesitas un título!">
+        <input nz-input formControlName="title" id="title" placeholder="Ingrese el título de la tarea..."
+          class="rounded-md hover:border-lime-500" />
+      </nz-form-control>
+    </nz-form-item>
 
-  <nz-form-item>
-    <nz-form-label [nzFor]="'description'" nzRequired class="min-w-28 text-start font-bold">Descripción</nz-form-label>
-    <nz-form-control  nzErrorTip="Necesitas una descripción!">
-      <textarea nz-input formControlName="description" id="description" placeholder="Ingrese una descripción..." class="rounded-md hover:border-lime-500"></textarea>
-    </nz-form-control>
-  </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzFor]="'description'" nzRequired
+        class="min-w-28 text-start font-bold">Descripción</nz-form-label>
+      <nz-form-control nzErrorTip="Necesitas una descripción!">
+        <textarea nz-input formControlName="description" id="description" placeholder="Ingrese una descripción..."
+          class="rounded-md hover:border-lime-500"></textarea>
+      </nz-form-control>
+    </nz-form-item>
 
-  <nz-form-item>
-    <nz-form-control class="flex items-end">
-      <button nz-button class="rounded-md bg-lime-500 hover:bg-lime-600 font-bold text-white hover:text-slate-50" (click)="submitForm()" [disabled]="taskForm.invalid">Crear Tarea</button>
-    </nz-form-control>
-  </nz-form-item>
-</nz-form>
+    <nz-form-item>
+      <nz-form-control class="flex items-end">
+        <button nz-button class="rounded-md bg-yellow-400 hover:bg-yellow-600 font-bold text-yellow-900 hover:text-slate-50"
+          (click)="submitForm()" [disabled]="taskForm.invalid">Crear Tarea</button>
+      </nz-form-control>
+    </nz-form-item>
+  </nz-form>
+</div>

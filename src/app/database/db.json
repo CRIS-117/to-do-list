@@ -6,7 +6,7 @@
       "description": "Esta es una tarea más detallada que requiere más contexto.",
       "created_at": "2024-09-15T10:30:00",
       "updated_at": "2024-09-20T10:30:00",
-      "status": true
+      "status": false
     },
     {
       "id": "3",
@@ -36,7 +36,7 @@
       "id": " 6",
       "title": "Esto es una prueba de alert",
       "description": "pongo a prueba el alert",
-      "status": false,
+      "status": true,
       "created_at": "2024-09-22T19:13:39.355Z",
       "updated_at": null
     },
@@ -44,7 +44,7 @@
       "id": " 9",
       "title": "margin",
       "description": "margin",
-      "status": false,
+      "status": true,
       "created_at": "2024-09-22T19:17:19.071Z",
       "updated_at": null
     },
@@ -52,7 +52,7 @@
       "id": "10",
       "title": "margin bottom",
       "description": "margin bottom",
-      "status": false,
+      "status": true,
       "created_at": "2024-09-22T19:17:43.345Z",
       "updated_at": null
     },
@@ -60,7 +60,7 @@
       "id": "11",
       "title": "movi",
       "description": "movi",
-      "status": false,
+      "status": true,
       "created_at": "2024-09-22T19:45:33.098Z",
       "updated_at": null
     },
@@ -68,16 +68,24 @@
       "id": "12",
       "title": "Holi",
       "description": "Venta de hotcakes los panas rabbit :D",
-      "status": false,
+      "status": true,
       "created_at": "2024-09-23T01:31:22.433Z",
       "updated_at": null
     },
     {
       "id": "13",
-      "title": "fdsfdsf",
-      "description": "sfdfds",
+      "title": "Esto es una prueba final de filtros",
+      "description": "probando todo todooo",
+      "status": true,
+      "created_at": "2024-09-23T04:02:56.447Z",
+      "updated_at": null
+    },
+    {
+      "id": "14",
+      "title": "sdfsdf",
+      "description": "sdfsdfsdf",
       "status": false,
-      "created_at": "2024-09-23T01:43:38.553Z",
+      "created_at": "2024-09-23T05:22:47.394Z",
       "updated_at": null
     }
   ]

@@ -14,7 +14,16 @@ export class TaskService {
   constructor(private http: HttpClient) { }
 
   getTasks(): Observable<Task[]> {
-    return this.http.get<Task[]>(this.apiUrl); 
+    return this.http.get<Task[]>(this.apiUrl).pipe(
+      map(tasks => {
+        return tasks.sort((a, b) => {
+          if (a.status !== b.status) {
+            return a.status ? 1 : -1;
+          }
+          return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+        });
+      })
+    );
   }
 
   createTask(newTask: Task): Observable<Task> {

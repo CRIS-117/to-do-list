@@ -7,7 +7,7 @@
     <div class="flex flex-col w-full mt-5 md:mt-0 md:flex-row md:w-1/4 md:justify-center md:items-center">
 
       <label nz-checkbox [(ngModel)]="task.status" (ngModelChange)="onToggleStatus()" class="mb-5 md:mb-0 font-semibold text-sm">
-        {{ task.status ? 'Completed' : 'Pending' }}
+        {{ task.status ? 'Completado' : 'Pendiente' }}
       </label>
 
       <button nz-button nzType="primary" (click)="onDelete()" class="bg-red-400 hover:bg-red-500 border-none rounded-md min-w-full flex justify-center items-center min-h-10 md:min-w-10">

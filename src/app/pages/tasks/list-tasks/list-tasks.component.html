@@ -1,7 +1,7 @@
 <div class="mb-5">
-  <app-task-filter></app-task-filter>
+  <app-task-filter (filterChange)="applyFilter($event)"></app-task-filter>
 </div>
-<div *ngFor="let task of tasks" class="overflow-hidden">
+<div *ngFor="let task of filteredTasks" class="overflow-hidden">
   <app-task-card
     [task]="task"
     (deleteTask)="deleteTask($event)"

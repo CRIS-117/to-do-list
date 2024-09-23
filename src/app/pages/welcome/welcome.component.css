@@ -1,9 +1,3 @@
-.images {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .images_container_one, .images_container_two {
   position: relative;
 }
@@ -18,18 +12,19 @@
 
 @keyframes moveUpDownOne {
   0% {
-    top: 0;
+    transform: translateY(0);
   }
   100% {
-    top: 30px;
+    transform: translateY(30px);
   }
 }
 
 @keyframes moveUpDownTwo {
   0% {
-    top: 25px;
+    transform: translateY(25px);
   }
   100% {
-    top: 0;
+    transform: translateY(0);
   }
 }
+
