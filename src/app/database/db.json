@@ -17,7 +17,7 @@
       "updated_at": null
     },
     {
-      "id": " 4",
+      "id": "4",
       "title": "Segunda prueba",
       "description": "provando mensajes de error",
       "status": false,
@@ -25,7 +25,7 @@
       "updated_at": null
     },
     {
-      "id": " 5",
+      "id": "5",
       "title": "Probando",
       "description": "Se pone a prueba los toast",
       "status": false,
@@ -33,7 +33,7 @@
       "updated_at": null
     },
     {
-      "id": " 6",
+      "id": "6",
       "title": "Esto es una prueba de alert",
       "description": "pongo a prueba el alert",
       "status": true,
@@ -41,7 +41,7 @@
       "updated_at": null
     },
     {
-      "id": " 9",
+      "id": "9",
       "title": "margin",
       "description": "margin",
       "status": true,

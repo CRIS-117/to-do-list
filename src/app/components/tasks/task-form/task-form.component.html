@@ -1,11 +1,8 @@
-<!-- Success message -->
 <nz-alert *ngIf="taskSuccess" nzType="success" nzMessage="Tarea creada exitosamente" nzShowIcon class="mb-5"></nz-alert>
 
-<!-- Error message -->
 <nz-alert *ngIf="taskError" nzType="error" nzMessage="Ocurrió un error al crear la tarea" nzShowIcon
   class="mb-5"></nz-alert>
 
-<!-- Form -->
 <div class="bg-lime-500 p-3 pt-8 rounded-md shadow-xl">
   <nz-form [formGroup]="taskForm">
     <nz-form-item>
