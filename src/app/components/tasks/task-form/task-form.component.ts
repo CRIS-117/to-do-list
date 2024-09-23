@@ -10,12 +10,26 @@ import { Task } from 'src/app/core/models/tasks/task.model';
 })
 export class TaskFormComponent implements OnInit {
 
+/* The code snippet you provided is from a TypeScript file for an Angular component called
+`TaskFormComponent`. In this component, the following properties are declared: */
   taskForm: FormGroup;
   taskSuccess = false;
   taskError = false; 
 
+/* The `@Output() taskCreated = new EventEmitter<Task>();` line in the `TaskFormComponent` class is
+creating an output property named `taskCreated` of type `EventEmitter`. */
   @Output() taskCreated = new EventEmitter<Task>();
 
+ /**
+  * The constructor initializes a form group with title and description fields using FormBuilder in
+  * TypeScript.
+  * @param {FormBuilder} fb - FormBuilder, which is a service provided by Angular for creating form
+  * controls and groups in reactive forms.
+  * @param {TaskService} taskService - The `taskService` parameter in the constructor is an instance of
+  * the `TaskService` class. It is being injected into the constructor using dependency injection. This
+  * allows the component to use the methods and properties provided by the `TaskService` class to
+  * interact with tasks or perform any necessary operations related to
+  */
   constructor(
     private fb: FormBuilder, 
     private taskService: TaskService,
@@ -28,6 +42,9 @@ export class TaskFormComponent implements OnInit {
 
   ngOnInit(): void { }
 
+/**
+ * The function `markAllFieldAsDirty` iterates through all controls in a form and marks them as dirty.
+ */
   markAllFieldAsDirty(): void {
     for(const i in this.taskForm.controls){
       if(this.taskForm.controls.hasOwnProperty(i)){
@@ -37,6 +54,10 @@ export class TaskFormComponent implements OnInit {
     }
   }
 
+/**
+ * The submitForm function creates a new task with user input data and handles success or error
+ * responses when submitting the form.
+ */
   submitForm(): void {
     if (this.taskForm.valid) {
       this.taskService.getNextId().subscribe(nextId => {

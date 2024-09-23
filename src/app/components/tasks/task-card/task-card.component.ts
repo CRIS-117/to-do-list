@@ -8,6 +8,8 @@ import { Task } from 'src/app/core/models/tasks/task.model';
 })
 export class TaskCardComponent implements OnInit {
 
+/* The code snippet provided is a TypeScript class for an Angular component called `TaskCardComponent`.
+Let's break down the annotations: */
   @Input() task!: Task;
   @Output() deleteTask = new EventEmitter<string>();
   @Output() toggleStatus = new EventEmitter<Task>();
@@ -18,10 +20,17 @@ export class TaskCardComponent implements OnInit {
     console.log(this.task.status)
   }
 
+  /**
+   * The `onDelete` function emits an event to delete a task with a specific ID.
+   */
   onDelete() {
     this.deleteTask.emit(this.task.id);
   }
 
+  /**
+   * The function `onToggleStatus` updates the status of a task and emits the updated task using an
+   * event emitter.
+   */
   onToggleStatus() {
     const updatedTask: Task = { 
       ...this.task, 
