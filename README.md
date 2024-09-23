@@ -88,7 +88,7 @@ This is a **simple To-Do List application** built with **Angular 14**. It provid
 ## Project Structure
 
 - `src/app/core`: Contains services and models (e.g., task model and task service).
-- - `src/app/pages`: Contains pages such as the Welcome Page and Tasks Pages.
+-  `src/app/pages`: Contains pages such as the Welcome Page and Tasks Pages.
 - `src/app/components`: Contains reusable components such as the task card and filter.
 - `src/app/database/db.json`: A local JSON file used by **json-server** to simulate API responses.
 
