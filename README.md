@@ -61,12 +61,12 @@ This is a **simple To-Do List application** built with **Angular 14**. It provid
 3. **Run the json-server**:
 
   ```bash
-   npx json-server --watch src/app/database/db.json --port 3000
+   npm run start:json-server
    ```
 4. **Run the Angular application**:
 
   ```bash
-   npx json-server --watch src/app/database/db.json --port 3000
+   ng serve
    ```
 5. **Open the application**:
 
